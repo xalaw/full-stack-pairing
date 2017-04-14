@@ -15,7 +15,7 @@ export function cheeseReducer(state = initialState, action){
   }
   else if( action.type === FETCH_CHEESE_SUCCESS) {
     return Object.assign({}, state, {
-      cheeses: action.cheeses,
+      cheeses: action.cheese,
       loading: false,
       error: null
 

@@ -25,6 +25,7 @@ export const fetchCheese = ()=> dispatch => {
     return res.json();
   })
   .then(cheese => {
+    console.log(cheese)
     dispatch(fetchCheeseSuccess(cheese))
   })
   .catch(error => dispatch(fetchCheeseError(error)));
